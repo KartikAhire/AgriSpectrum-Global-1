@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mumbai Agro Exports</title>
+  <meta name="description" content="Exporting premium agricultural goods worldwide with trust, quality, and sustainability.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+   
+  <!-- Chatbot Button -->
+  
+
+  <!-- Chatbot Window -->
+  <!-- Chatbot Section -->
+<div id="chatbot">
+  <div id="chat-window">
+    <div id="messages"></div>
+  </div>
+  <input type="text" id="user-input" placeholder="Ask about product..." />
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+
+  <header class="header" id="top">
+    <a href="#top" class="logo">Mumbai <span>Agro</span> Exports</a>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+      <a href="#products" class="nav-link" data-i18n="nav_products">Products</a>
+      <a href="#order" class="nav-link" data-i18n="nav_order">Order</a>
+      <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="searchbar">
+      <input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products" />
+      <button id="voiceBtn" aria-label="Voice search"><i class="fa-solid fa-microphone"></i></button>
+    </div>
+
+    <select id="langSelect" class="lang-select" title="Translate">
+      <option value="en">EN</option>
+      <option value="hi">HI</option>
+      <option value="mr">MR</option>
+    </select>
+
+    <button class="toggle" id="modeToggle" title="Dark/Light">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button class="menu" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
+
+  <main>
+    <!-- ===== Hero Slider ===== -->
+    <section id="home" class="hero section reveal">
+      <div class="slider" id="slider">
+        <img src="https://img.freepik.com/premium-photo/company-farmers-works-agricultural-field-sunset-time-neural-network-ai-generated_76080-106624.jpg?semt=ais_hybrid&w=740" alt="Agriculture fields" class="slide active" />
+        <img src="https://img.freepik.com/free-photo/busy-group-farmers-modern-entrepreneurial-bio-agricultural-greenhouse-used-growing-natural-healthy-eco-vegetables-regenerative-agriculture-using-pesticide-free-soil-fertilizer_482257-64588.jpg?semt=ais_hybrid&w=740" alt="Farmers with business professionals" class="slide" />
+        <img src="https://media.smallbiztrends.com/2025/04/professional-woman-farmer-with-digital-tablet-works-in-field-agricultural-business-concept.jpg" class="slide" />
+        <img src="https://www.fbn.com/vo1m91j96iq4/6Oulg5kmGxOlml5YVeLVFt/614510bbac012589221aeb8c6a951133/Large_JPG-Farmer_in_Soybean_Field_with_Tablet.jpg?fl=progressive&fm=jpg&w=330&h=280" alt="International trade" class="slide" />
+      </div>
+      <div class="hero-caption">
+        <h1 data-i18n="hero_title">Exporting premium agricultural goods worldwide</h1>
+        <p data-i18n="hero_sub">Trust • Quality • Sustainability</p>
+      </div>
+    </section>
+
+    <!-- ===== Meeting Section with Counters ===== -->
+    <section class="section meeting reveal" aria-label="Business professionals meeting farmers">
+      <div class="meeting-grid">
+        <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=1200&auto=format&fit=crop" alt="Business meeting with farmers" class="meeting-img" loading="lazy" />
+        <div class="meeting-text">
+          <h2 data-i18n="meet_title">We connect growers to global markets</h2>
+          <p data-i18n="meet_desc">Our Mumbai team collaborates directly with farming communities to ensure fair pricing, traceability, and consistent export quality.</p>
+          <div class="stats">
+            <div class="stat">
+              <span class="counter" data-count="100">0</span>
+              <small data-i18n="stats_clients">Clients</small>
+            </div>
+            <div class="stat">
+              <span class="counter" data-count="20">0</span>
+              <small data-i18n="stats_countries">Countries</small>
+            </div>
+            <div class="stat">
+              <span class="counter" data-count="50">0</span>
+              <small data-i18n="stats_products">Products</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Client - Farmer Interaction Section -->
+<!-- Farmer Work Section -->
+<section class="farmer-gallery">
+    <h2>Our Hardworking Farmers</h2>
+    <div class="gallery">
+      
+      <div class="card">
+        <img src="https://cdn.create.vista.com/api/media/small/402699308/stock-photo-selective-focus-farmer-plaid-shirt-sowing-seeds-plowed-field" alt="Farmer working in field">
+        <p>Farmers carefully planting crops to ensure a healthy harvest.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://img.freepik.com/premium-photo/sixty-years-old-beard-farmer-holding-wheat-ears-his-hand_473712-2322.jpg?semt=ais_hybrid&w=740&q=80" alt="Farmer harvesting">
+        <p>Harvesting crops with dedication and hard work.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/2165200582/photo/indian-woman-farmer-spraying-fertilizer-in-corn-field.webp?a=1&b=1&s=612x612&w=0&k=20&c=F8hIuJpgkfLDVJwsGecGis_SllZyIZsHCegFKxBQzq8=" alt="Farmer watering plants">
+        <p>Farmers watering plants to keep them green and fresh.</p>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+    <!-- ===== Products ===== -->
+   <!-- ✅ PRODUCTS SECTION -->
+<section id="products" class="products-section">
+  <h2 class="section-title">Our Products</h2>
+
+  <!-- Fruits -->
+  <div class="product-category">
+    <h3>🍎 Fruits</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?mango" alt="Mango">
+        <h4>Mango</h4>
+        <p>Alphonso, Kesar, etc.</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Mango" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?grapes" alt="Grapes">
+        <h4>Grapes</h4>
+        <p>Green, Black, Seedless</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Grapes" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?banana" alt="Banana">
+        <h4>Banana</h4>
+        <p>Fresh Export Quality</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Banana" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?pomegranate" alt="Pomegranate">
+        <h4>Pomegranate</h4>
+        <p>High-quality, rich in taste</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Pomegranate" target="_blank" class="order-btn">Order Now</a>
+      </div>
+       <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?mango" alt="Mango">
+        <h4>Mango</h4>
+        <p>Alphonso, Kesar, etc.</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Mango" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?grapes" alt="Grapes">
+        <h4>Grapes</h4>
+        <p>Green, Black, Seedless</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Grapes" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <!-- Grains -->
+  <div class="product-category">
+    <h3>🌾 Grains</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?wheat" alt="Wheat">
+        <h4>Wheat (गहू)</h4>
+        <p>Premium export quality wheat</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Wheat" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?maize" alt="Maize">
+        <h4>Maize / Corn (मक्का)</h4>
+        <p>Rich and natural corn</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Maize" target="_blank" class="order-btn">Order Now</a>
+      </div>
+       <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?wheat" alt="Wheat">
+        <h4>Wheat (गहू)</h4>
+        <p>Premium export quality wheat</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Wheat" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?maize" alt="Maize">
+        <h4>Maize / Corn (मक्का)</h4>
+        <p>Rich and natural corn</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Maize" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?bajra" alt="Bajra">
+        <h4>Bajra (बाजरी)</h4>
+        <p>Healthy and natural</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Bajra" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?jowar" alt="Jowar">
+        <h4>Jowar (ज्वारी)</h4>
+        <p>Organic jowar grains</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Jowar" target="_blank" class="order-btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Powders -->
+  <div class="product-category">
+    <h3>🧂 Powders</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?onion" alt="Onion Powder">
+        <h4>Onion Powder (कांदा पावडर)</h4>
+        <p>Dehydrated onion powder</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Onion%20Powder" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?garlic" alt="Garlic Powder">
+        <h4>Garlic Powder (लसूण पावडर)</h4>
+        <p>Rich garlic flavor</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Garlic%20Powder" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?chilli" alt="Chilli Powder">
+        <h4>Chilli Powder (मिरची पावडर)</h4>
+        <p>Hot and spicy taste</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Chilli%20Powder" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?tomato" alt="Tomato Powder">
+        <h4>Tomato Powder (टोमॅटो पावडर)</h4>
+        <p>Natural dehydrated tomato</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Tomato%20Powder" target="_blank" class="order-btn">Order Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?onion" alt="Onion Powder">
+        <h4>Onion Powder (कांदा पावडर)</h4>
+        <p>Dehydrated onion powder</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Onion%20Powder" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?moringa" alt="Moringa Powder">
+        <h4>Moringa Powder (शेवग्याची पानं पावडर)</h4>
+        <p>Natural energy booster</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Moringa%20Powder" target="_blank" class="order-btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Eco Friendly -->
+  <div class="product-category">
+    <h3>🌱 Eco-Friendly Products</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?areca,plates" alt="Areca Plates">
+        <h4>Areca Leaf Plates / Bowls (सुपारीया पानं प्लेट्स)</h4>
+        <p>Eco-friendly disposable plates</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Areca%20Plates" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?bagasse,plates" alt="Sugarcane Plates">
+        <h4>Sugarcane Bagasse Plates / Cups</h4>
+        <p>ऊसाच्या गरापासून बनवलेली प्लेट्स, कप</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Sugarcane%20Plates" target="_blank" class="order-btn">Order Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?areca,plates" alt="Areca Plates">
+        <h4>Areca Leaf Plates / Bowls (सुपारीया पानं प्लेट्स)</h4>
+        <p>Eco-friendly disposable plates</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Areca%20Plates" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?bamboo,toothbrush" alt="Bamboo Toothbrush">
+        <h4>Bamboo Toothbrush</h4>
+        <p>Natural bamboo-made brushes</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Bamboo%20Toothbrush" target="_blank" class="order-btn">Order Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?areca,plates" alt="Areca Plates">
+        <h4>Areca Leaf Plates / Bowls (सुपारीया पानं प्लेट्स)</h4>
+        <p>Eco-friendly disposable plates</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Areca%20Plates" target="_blank" class="order-btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://source.unsplash.com/300x200/?bamboo,cup" alt="Bamboo Cups">
+        <h4>Bamboo Bottles / Cups / Straws</h4>
+        <p>Eco-friendly lifestyle products</p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Bamboo%20Cups" target="_blank" class="order-btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   
+
+ <!-- Live Chat Section -->
+
+
+
+
+    <!-- ===== Certificates ===== -->
+    <section class="section certs reveal" id="certs">
+      <h2 class="center" data-i18n="cert_title">Certificates</h2>
+      <div class="cert-grid">
+        <div class="cert-card hover-zoom">
+          <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1000&auto=format&fit=crop" alt="Certificate" loading="lazy" />
+          <div class="cert-info">
+            <h3>ISO 22000</h3>
+            <p>Issued by: QMS • Year: 2024</p>
+          </div>
+        </div>
+        <div class="cert-card hover-zoom">
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1000&auto=format&fit=crop" alt="Certificate" loading="lazy" />
+          <div class="cert-info">
+            <h3>APEDA Registered</h3>
+            <p>Issued by: APEDA • Year: 2023</p>
+          </div>
+        </div>
+        <div class="cert-card hover-zoom">
+          <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=1000&auto=format&fit=crop" alt="Certificate" loading="lazy" />
+          <div class="cert-info">
+            <h3>FSSAI License</h3>
+            <p>Issued by: FSSAI • Year: 2025</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-mini">
+        <p><i class="fa-solid fa-phone"></i> +91-90000-00000 • <i class="fa-solid fa-users"></i> 100+ Connected Clients</p>
+      </div>
+    </section>
+    <section id="order" class="order-section section-gap">
+  <h2>Place Your Order</h2>
+  <form id="orderForm" class="order-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+    <label for="product">Select Product:</label>
+    <select id="product" name="product" required>
+      <option value="" disabled selected>-- Choose a product --</option>
+      <option value="Mango">Mango</option>
+      <option value="Pomegranate">Pomegranate</option>
+      <option value="Rice">Rice</option>
+      <option value="Wheat">Wheat</option>
+      <option value="Turmeric Powder">Turmeric Powder</option>
+      <option value="Organic Fertilizer">Organic Fertilizer</option>
+    </select>
+
+    <button type="submit" class="submit-btn">Submit Order</button>
+  </form>
+</section>
+
+
+<section id="contact" class="section-gap contact-section">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+    <div class="map-wrapper">
+      <!-- Google Map iframe embedded showing Mumbai location -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11619976328!2d72.74109951812577!3d19.082197839072205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c63b5eb5b5cb%3A0x6c7179cec1e27939!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1692915000000!5m2!1sen!2sus"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mumbai Location Map"></iframe>
+    </div>
+
+    <div class="contact-info">
+      <h3>Our Address</h3>
+      <p>123 Agribiz Tower, Andheri East, Mumbai, Maharashtra, India</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> contact@agri-export.com</p>
+
+      <div class="social-icons">
+        <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp" title="WhatsApp">
+          <img src="https://img.icons8.com/ios-filled/40/2ecc71/whatsapp.png" alt="WhatsApp icon" />
+        </a>
+        <a href="https://facebook.com/agri-export" target="_blank" aria-label="Facebook" title="Facebook">
+          <img src="https://img.icons8.com/ios-filled/40/3b5998/facebook-new.png" alt="Facebook icon" />
+        </a>
+        <a href="https://instagram.com/agri_export" target="_blank" aria-label="Instagram" title="Instagram">
+          <img src="https://img.icons8.com/ios-filled/40/e4405f/instagram-new.png" alt="Instagram icon" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ===== Order ===== -->
+    <!-- ===== Place an Order Section ===== -->
+<!-- ===== Place an Order ===== -->
+<!-- <section id="placeOrder" class="order-section">
+  <h2 class="center">Place an Order</h2>
+  <div class="order-wrapper">
+    <form id="orderForm" class="order-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Mobile Number" required />
+
+      <!-- Product Selection -->
+      <!-- <select name="product" required>
+        <option value="" disabled selected>Select Product</option>
+        <option value="wheat">Wheat</option>
+        <option value="rice">Rice</option>
+        <option value="corn">Corn</option>
+        <option value="spices">Spices</option>
+      </select>
+
+      <textarea name="message" placeholder="Additional Details" rows="4"></textarea>
+
+      <button type="submit" class="btn primary">Place Order</button>
+      <p class="success-msg">Your order has been submitted!</p>
+    </form>
+  </div>
+</section> -->
+
+
+    <!-- ===== Contact ===== -->
+<!--   
+<section id="ai-contact" class="contact-ai section">
+  <div class="contact-wrapper">
+
+    <<div class="contact-left">
+      <h2 data-i18n="contact_title">Contact Us</h2>
+
+      <div class="contact-cards">
+        <div class="card small">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong data-i18n="address_label">Address</strong>
+            <p id="companyAddress">Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+
+        <div class="card small">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong data-i18n="phone_label">Phone</strong>
+            <p id="companyPhone">+91-90000-00000</p>
+          </div>
+        </div>
+
+        <div class="card small">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong data-i18n="email_label">Email</strong>
+            <p id="companyEmail">info@mumbaiagroexports.com</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactAIForm" class="contact-ai-form" aria-label="Contact form">
+        <input name="name" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <input name="phone" placeholder="Phone" />
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary" id="sendContactBtn" data-i18n="send_btn">Send</button>
+          <a id="whatsappContact" class="btn outline" href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </form>
+
+      <div class="lang-voice">
+        <label for="contactLang">Language</label>
+        <select id="contactLang" aria-label="Choose language">
+          <option value="en">EN</option>
+          <option value="hi">HI</option>
+          <option value="mr">MR</option>
+        </select>
+
+        <button id="openChatBtn" class="btn chat-open" aria-label="Open AI Chatbot">AI FAQ Assistant</button>
+      </div>
+
+      <div class="social-float">
+        <a href="#" class="social wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="social ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <div class="map-wrap">
+        <iframe
+          loading="lazy"
+          src="https://www.google.com/maps?q=Mumbai,+Maharashtra,+India&output=embed"
+          title="Mumbai location"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="quick-info">
+        <h3 data-i18n="quick_title">Quick Info</h3>
+        <ul>
+          <li data-i18n="quick_moq">MOQ: Typically 1 ton (varies by product)</li>
+          <li data-i18n="quick_docs">Docs: Phyto, COO, Fumigation available</li>
+          <li data-i18n="quick_ship">Shipping: FOB/CIF/EXW options</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ===== AI Chatbot Modal (client-side simulated) ===== -->
+<div id="aiChatModal" class="ai-chat-modal" aria-hidden="true" role="dialog" aria-label="AI Chatbot">
+  <div class="ai-chat-panel">
+    <header>
+      <h4>AI Assistant</h4>
+      <div class="ai-controls">
+        <select id="aiLang">
+          <option value="en">EN</option>
+          <option value="hi">HI</option>
+          <option value="mr">MR</option>
+        </select>
+        <button id="aiCloseBtn" aria-label="Close chat"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </header>
+
+    <div class="ai-messages" id="aiMessages" role="log" aria-live="polite"></div>
+
+    <div class="ai-input">
+      <button id="aiVoiceBtn" title="Voice input"><i class="fa-solid fa-microphone"></i></button>
+      <input id="aiInput" placeholder="Ask about orders, MOQ, shipping or products..." aria-label="AI message input" />
+      <button id="aiSendBtn" class="btn">Send</button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ===== Testimonials ===== -->
+  <section class="testimonials" id="testimonials">
+  <h2>🌟 What Our Clients Say 🌟</h2>
+  <div class="testimonial-container">
+    <div class="testimonial active">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Client">
+      <p>"The products are fresh and of top quality. Highly recommend this company!"</p>
+      <h4>- Ramesh Patel</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Client">
+      <p>"Very professional service and timely delivery every time."</p>
+      <h4>- Sunita Sharma</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Client">
+      <p>"They export the best agricultural products I’ve seen. Trusted partner!"</p>
+      <h4>- Rajesh Kumar</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="Client">
+      <p>"Amazing quality! My business has grown because of their supplies."</p>
+      <h4>- Priya Desai</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Client">
+      <p>"I’m impressed with their commitment towards farmers and quality."</p>
+      <h4>- Sandeep Joshi</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/16.jpg" alt="Client">
+      <p>"Reliable and affordable, I always prefer their products for exports."</p>
+      <h4>- Kavita Nair</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/17.jpg" alt="Client">
+      <p>"Customer support is excellent, they always help with quick solutions."</p>
+      <h4>- Arvind Singh</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Client">
+      <p>"Packaging is world-class, and the quality remains intact during shipping."</p>
+      <h4>- Neha Kapoor</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Client">
+      <p>"Highly satisfied with their professionalism and timely updates."</p>
+      <h4>- Anil Gupta</h4>
+    </div>
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="Client">
+      <p>"They are the most trustworthy export company I’ve worked with."</p>
+      <h4>- Meena Iyer</h4>
+    </div>
+  </div>
+
+  <!-- Navigation Dots -->
+  <div class="dots"></div>
+</section>
+
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Mumbai Agro Exports</h3>
+        <p>Delivering quality from Indian farms to global tables.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social-row">
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Mumbai Agro Exports. All rights reserved.</p>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <img id="modalImg" alt="Product" />
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <a id="modalOrder" class="btn" href="#" target="_blank">Order on WhatsApp</a>
+    </div>
+  </div>
+ 
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>  
