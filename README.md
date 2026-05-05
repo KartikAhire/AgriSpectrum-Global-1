@@ -44,8 +44,14 @@ The platform connects Indian farmers with international buyers, ensuring quality
 ---
 
 ## 📸 Screenshots
-
+HOMEPAGE
 <img width="1913" height="1043" alt="Screenshot 2026-05-05 173819" src="https://github.com/user-attachments/assets/eadc839b-c7e8-4b7d-a2c4-fbd8b30f2335" />
+PRODUCT
+<img width="1291" height="972" alt="Screenshot 2026-05-05 174507" src="https://github.com/user-attachments/assets/935754fc-367a-4a4a-b0ce-d4df40ec93e7" />
+CONTACT
+<img width="1191" height="859" alt="Screenshot 2026-05-05 174603" src="https://github.com/user-attachments/assets/ba40c8be-83eb-4b73-ba5a-b87e9e174505" />
+
+
 
 
 ---
